@@ -1,1 +1,79 @@
-// TODO
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+
+.posts {
+  max-width: 700px;
+  margin: 5rem auto 0;
+
+  a {
+    display: block;
+
+    &+a {
+      margin-top: 3rem;
+      padding-top: 1rem;
+    }
+
+    strong {
+      display: block;
+      margin-bottom: 0.5rem;
+      line-height: 1rem;
+      color: var(--white);
+      font-size: 1.5rem;
+    }
+
+    p {
+      color: var(--gray-100);
+      font-size: 1rem;
+      margin-top: 1rem;
+    }
+
+    time {
+      color: var(--gray-100);
+      font-size: 0.9rem;
+    }
+
+    span {
+      color: var(--gray-100);
+      font-size: 0.9rem;
+    }
+
+
+  }
+
+  .infoContainer {
+    display: flex;
+    flex-direction: row;
+
+    div {
+      display: flex;
+      flex-direction: row;
+      margin-top: 1rem;
+
+      &+div {
+        margin-left: 0.5rem;
+      }
+
+      time, span {
+        margin-left: 0.5rem;
+      }
+    }
+
+
+  }
+
+  .loadMorePostsButton {
+    color: var(--pink);
+    background: transparent;
+    border: none;
+    font-weight: 600;
+    font-size: 1rem;
+    text-align: justify;
+    margin-top: 4rem;
+
+  }
+
+}
